@@ -1,0 +1,58 @@
+1. What is Emmet?
+Ans: Emmet is a plugin for many popular text editors like VS Code which improves HTML, CSS & javaScript
+     workflows.
+     Example: html:5 with tab button click will create complete skeleton of html5.
+
+2. Difference between a Library & Framework
+Ans: Framework - 1. Provides ready to use tools, standards, templates and policies for fast applicatoin development
+                 2. Framework controls caling of libraries for our Code
+                 3. To leverage the benefit of Framework a fresh applicatoin can be developed using following the Framework's guidelines.
+                 4. Easy to create & deploy a software application quickly
+                 5. Intent of framework is to reduce the complexity of the software development process.
+
+       Library - 1. Provides reusable funciton for our code.
+                 2. Our code controls when & where to call a Library.
+                 3. Library can be added to augment the features of an existing application.
+                 4. Facilitates program binding
+                 5. Helps to resuse a software function.
+                 6. Intent of a Library is to provide reusable software functionality.
+
+3. What is CDN? why do we use it?
+Ans: Content Deliver Network is a distributed network of servers that delivers web content to users based
+     on their geographical location. The main purpose of the CDN is to improve the performance of websites
+     and reduce latency by caching static content such as images, videos and HTML files form multiple locatoins
+     around the world.
+
+4. Why is React known as React?
+Ans: Facebook choose the name React as it helps developers build user interface that are fast & responsive or "reactive".
+     The library was designed to "react" to changes in data.
+
+5. What is cross-origin in script tag?
+Ans: crossorigin attribut sets the mode of request to an HTTP CORS request.
+     A crossorigin request is a request for a resource (e.g. style sheets, iframe, images, fonts or scripts) from other domain.
+
+6. What is Difference between React and ReactDOM.
+Ans: React & ReactDOM was split post version 14.
+     The reason React & ReactDOM was split into two libraries was due to arrival of React Native.
+     
+     The React package contains React.createElement, React.createClass, React.Component, React.protoTypes
+     React.Children and other helpers related to elements and component classes that help us in build component
+
+     The react-dom package contains ReactDOM.render, ReactDOM.unmountComponentAtNode, and ReactDOM.findDOMNode and
+     in react-dom/server we have server-side rendering support with ReactDOMServer.renderToString and
+     ReactDOMServer.renderToStaticMarkup
+
+
+7. What is difference between react.development.js and react.production.js file via CDN?
+Ans: react.development.js - More developer friendly, readable, will take more size.
+     react.production.js - Minified code that is not developer friendly as it focused on decreasing in file size, code efficiency.
+
+
+8. What is async and defer?
+Ans: defer attribute: First the defer attribute will download the script file and then wait for HTML parsing. After the end of the HTML parsing, the script will execute.
+     In other words, it will guarantee all the scripts will execute after the HTML parsing.
+     Defer attribute is useful when the script is used for DOM manipulations.
+
+     Async attribute: The async attribute will download the script file and execute without waiting for the end of HTML parsing.
+     In other words, it does not guarantee that all the scripts will execute after the HTML parsing.
+     The async attribute is useful when the script is not used for DOM manipulation. Sometimes you need a script only for server-side operations or for handling cache or cookies, but not for DOM manipulations.    

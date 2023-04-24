@@ -49,10 +49,12 @@ Ans: react.development.js - More developer friendly, readable, will take more si
 
 
 8. What is async and defer?
-Ans: defer attribute: First the defer attribute will download the script file and then wait for HTML parsing. After the end of the HTML parsing, the script will execute.
+Ans: defer attribute: First the defer attribute will download the script file and then wait for HTML parsing.
+     After the end of the HTML parsing, the script will execute.
      In other words, it will guarantee all the scripts will execute after the HTML parsing.
      Defer attribute is useful when the script is used for DOM manipulations.
 
      Async attribute: The async attribute will download the script file and execute without waiting for the end of HTML parsing.
      In other words, it does not guarantee that all the scripts will execute after the HTML parsing.
-     The async attribute is useful when the script is not used for DOM manipulation. Sometimes you need a script only for server-side operations or for handling cache or cookies, but not for DOM manipulations.    
+     The async attribute is useful when the script is not used for DOM manipulation.
+     Sometimes you need a script only for server-side operations or for handling cache or cookies, but not for DOM manipulations.    

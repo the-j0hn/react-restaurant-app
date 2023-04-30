@@ -1,0 +1,70 @@
+1. What is NPM
+Ans: npm is package manager/ software registery for javaScript.
+
+2. What is Parcel/Webpack? Why do we need it?
+Ans: Webpack & Parcel are bundling tools
+     1. Transpiles the JSX systax (HTML tag inside javaScript) to JSX
+     2. Transpile the ES6 systax arrow function, spread operator into browser supported versions of javaScript
+     3. Webpack bundles all the files into single JS file for production use
+     4. it also perform optimization, minification, uglification execute
+
+3. What is parcel-cache
+Ans: The cache folder or .parcel-cache in parcel v2 stores information about your project when parcel builds it,
+     so that when it rebuilds, it doesn't have to re-parse and re-analyze everything from scratch
+
+4. What is npx
+Ans: It is npm package runner which can execute any package that you want from npm resgistry.
+
+5. What is difference between 'dependencies' & 'dev-dependencies'
+Ans: dependencies "...are those that your project really needs to be able to work in production."
+     devDependencies "...are those that you need during development."
+     peerDependencies "if you want to create and publish your own library so that it can be used as a dependency"
+
+6. What is tree shaking
+Ans: Tree shaking is a term commonly used in JS context for dead-code elimination which is done by webpack/parcel.
+
+7.What is Hot Module Replacement?
+Ans: Hot Module Replacement is way of exchanging moduls in a running application (and adding/removing modules)
+     You can update changed modules without a full page reload.
+
+8.What is .gitignore? what should we add and not add in it?
+Ans: .gitignore tells which files (or patterns) it should ignore. 
+     It is usually used to avaoid comitting files that are not useful such as node module, temprory files IDE createClass
+
+9.What is difference between 'package.json' & 'package-lock.json'
+Ans: package json      -> 1. will have the latest dev version because of the caret (^) or tilde (~) persent for different dependencies version
+     package.lock.json -> 1. will have the exact version of the dependencies like 2.8.3  which was installed by the developer on last update/install
+						     whereas in package.json it can be ^2.8.3
+					      2. package.lock.json & node modules are updated when we do npm install or update
+					      3. package.lock.json will have even the dependencies sub dependencies
+					         e.g. -> you add express js to dev dependencies & do npm install, in package.lock.json you will be also able
+					         to see the exact dev dependencies version for even express needs which is not present in case of package.json
+					      4. we should commit package.lock.json also in github so that new dev can check what was the exact version
+					         used by the dev
+
+10. Why should I not modify 'package-lock.json'?
+Ans: package-lock.json should not be modified as it contains the exact version details that is currently
+     installed for your application.
+
+11. What is 'node_modules'? Is it a good idea to push that on git?
+Ans: We should not push 'node_modules' to git.
+
+12. What is the 'dist' folder
+Ans: dist means 'distributable'. We get it after runnning npm run build. or ng build --prod.
+
+13. What is 'browserList'
+Ans: It allows specify which browser should it support in frontend app.
+
+14. What is '^ caret' & '~ tilde'
+Ans:  for ^ (caret)-> (Automaticall update both patch or minor)
+					  if we have patch or minor versoin it will update automatically,  suppose ^2.8.3 it will automatically update minor version of ^2.9.0 OR update for patch version ^
+      for ~ (tildE) -> (Automatically updates patch not the minor)
+					   if will download the patch version 
+                   ~   2.8.3 can take ~2.8.4 version
+
+15. What are script types?
+Ans: script type = "module" is used to denote when module is being pointed to.
+    type="application/javascript"
+
+
+

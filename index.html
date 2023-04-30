@@ -18,8 +18,10 @@
         root.appendChild(newElement);
     </script> -->
 
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <script src="App.js"></script>
+    <!-- post installing react & react-dom dependencies we don't need cdn links -->
+    <!-- CDN links not preferred way as we don't want to make extra expensive network calls to react -->
+    <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
+    <script type="module" src="./App.js"></script>
 </body>
 </html>

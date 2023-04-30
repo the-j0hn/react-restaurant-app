@@ -1,5 +1,6 @@
    
-   
+   import React from "react";
+   import ReactDOM from "react-dom/client";
     // 1. creating a h1 tag to existing root div using ReactJS
     // const newElement = React.createElement('h1', {id: 'heading'}, 'Hello world, created this using React');
     // const root = ReactDOM.createRoot(document.getElementById('root'));

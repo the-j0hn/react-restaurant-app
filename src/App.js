@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -6,6 +5,7 @@ function App() {
    <div>
       <h2>Let's get started!</h2>
       <p>This is also visible</p>
+      <p>This is initial commit</p>
    </div>
   );
 }
